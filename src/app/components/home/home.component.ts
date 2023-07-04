@@ -22,12 +22,12 @@ export class HomeComponent implements OnInit {
   ) {}
 
   filterMovies() {
-    if (this.searchTerm) {
-      this.filterMovies = this.movies.filter((movie: any) => {
-        movie.movie.toLowerCase().includes(this.searchTerm.toLowerCase());
-      });
+    if (this.searchTerm.trim().length > 0) {
+      this.filteredMovies = this.movies.filter((movie: UpcomingMovies) =>
+        movie.movie.toLowerCase().includes(this.searchTerm.toLowerCase())
+      );
     } else {
-      this.filterMovies = this.movies;
+      this.filteredMovies = this.movies;
     }
   }
 
