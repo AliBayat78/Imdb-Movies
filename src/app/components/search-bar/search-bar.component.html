@@ -1,0 +1,12 @@
+<div class="search">
+  <span class="logo" routerLink="/">Movie Data Base</span>
+  <div class="search-container">
+    <input
+      placeholder="Search Movie ..."
+      class="search-input"
+      [(ngModel)]="searchTerm"
+      name="search"
+      (change)="onSearchInputChange()"
+    />
+  </div>
+</div>

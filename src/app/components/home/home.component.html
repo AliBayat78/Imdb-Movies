@@ -1,0 +1,35 @@
+<div class="filters">
+  <mat-form-field>
+    <mat-label>Sort</mat-label>
+    <mat-select [(ngModel)]="sort">
+      <mat-option value="name">Name</mat-option>
+      <mat-option value="-released">Released</mat-option>
+      <mat-option value="-year">Year</mat-option>
+      <mat-option value="-imdb">IMDB Rating</mat-option>
+      <mat-option value="metacritic">Metacritic</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<div class="movies">
+  <div class="movie" *ngFor="let movie of filteredMovies">
+    <div class="movie-container">
+      <img [src]="movie.image" class="movie-thumbnail" alt="thumbnail" />
+    </div>
+    <span class="movie-rating">Rate: {{ movie.rating }}</span>
+    <div class="movie-description">
+      <p class="movie-name">
+        {{
+          movie.movie.length > 32
+            ? movie.movie.slice(0, 32) + "..."
+            : movie.movie
+        }}
+      </p>
+      <a target="_blank" [href]="movie.imdb_url" class="movie-url">{{
+        movie.imdb_url.length > 32
+          ? movie.imdb_url.slice(0, 32) + "..."
+          : movie.imdb_url
+      }}</a>
+    </div>
+  </div>
+</div>
