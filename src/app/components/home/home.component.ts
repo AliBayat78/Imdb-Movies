@@ -44,7 +44,6 @@ export class HomeComponent implements OnInit {
       next: (term) => {
         this.searchTerm = term;
         this.filterMovies();
-        console.log(this.filteredMovies);
       },
     });
   }
