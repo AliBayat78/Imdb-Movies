@@ -16,7 +16,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { HomeComponent } from './components/home/home.component';
 import { MovieComponent } from './components/home/movie/movie.component';
-import { ErrorsInterceptor } from './components/interceptors/errors.interceptor';
+import { ErrorsInterceptor } from './interceptors/errors.interceptor';
 
 @NgModule({
   declarations: [

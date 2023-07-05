@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpService } from '../services/http.service';
+import { HttpService } from '../../services/http.service';
 import { UpcomingMovies } from 'src/app/models/movies.models';
-import { SearchService } from '../services/search.service';
-import { MatSelectChange } from '@angular/material/select';
+import { SearchService } from '../../services/search.service';
 
 @Component({
   selector: 'app-home',
