@@ -4,69 +4,89 @@
     "movie": "The Shawshank Redemption",
     "rating": 9.2,
     "image": "assets/images/shawshank.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0111161/"
+    "imdb_url": "https://www.imdb.com/title/tt0111161/",
+    "year": 1994,
+    "metacritic": 82
   },
   {
     "id": 2,
     "movie": "The Godfather",
     "rating": 9.2,
     "image": "assets/images/godfather.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0068646/"
+    "imdb_url": "https://www.imdb.com/title/tt0068646/",
+    "year": 1972,
+    "metacritic": 100
   },
   {
     "id": 3,
     "movie": "The Dark Knight",
     "rating": 9,
     "image": "assets/images/dark_knight.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0468569/"
+    "imdb_url": "https://www.imdb.com/title/tt0468569/",
+    "year": 2008,
+    "metacritic": 84
   },
   {
     "id": 4,
     "movie": "Pulp Fiction",
     "rating": 8.9,
     "image": "assets/images/pulp_fiction.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0110912/"
+    "imdb_url": "https://www.imdb.com/title/tt0110912/",
+    "year": 1994,
+    "metacritic": 95
   },
   {
     "id": 5,
     "movie": "The Lord of the Rings: The Return of the King",
     "rating": 9,
     "image": "assets/images/lotr_return_king.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0167260/"
+    "imdb_url": "https://www.imdb.com/title/tt0167260/",
+    "year": 2003,
+    "metacritic": 94
   },
   {
     "id": 6,
     "movie": "The Good, the Bad and the Ugly",
     "rating": 8.8,
     "image": "assets/images/good_bad_ugly.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0060196/"
+    "imdb_url": "https://www.imdb.com/title/tt0060196/",
+    "year": 1996,
+    "metacritic": 90
   },
   {
     "id": 7,
     "movie": "Fight Club",
     "rating": 8.8,
     "image": "assets/images/fight_club.webp",
-    "imdb_url": "https://www.imdb.com/title/tt0137523/"
+    "imdb_url": "https://www.imdb.com/title/tt0137523/",
+    "year": 1999,
+    "metacritic": 67
   },
   {
     "id": 8,
     "movie": "The Lord of the Rings: The Fellowship of the Ring",
     "rating": 8.8,
     "image": "assets/images/lotr_fellowship.webp",
-    "imdb_url": "https://www.imdb.com/title/tt0120737/"
+    "imdb_url": "https://www.imdb.com/title/tt0120737/",
+    "year": 2001,
+    "metacritic": 92
   },
   {
     "id": 9,
     "movie": "Forrest Gump",
     "rating": 8.8,
     "image": "assets/images/forrest_gump.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt0109830/"
+    "imdb_url": "https://www.imdb.com/title/tt0109830/",
+    "year": 1994,
+    "metacritic": 82
   },
   {
     "id": 10,
     "movie": "Inception",
     "rating": 8.8,
     "image": "assets/images/inception.jpg",
-    "imdb_url": "https://www.imdb.com/title/tt1375666/"
+    "imdb_url": "https://www.imdb.com/title/tt1375666/",
+    "year": 2010,
+    "metacritic": 74
   }
 ]

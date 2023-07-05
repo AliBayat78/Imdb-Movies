@@ -1,11 +1,13 @@
 <div class="filters">
   <mat-form-field>
     <mat-label>Sort</mat-label>
-    <mat-select [(ngModel)]="sort">
+    <mat-select
+      (selectionChange)="onSortHandler($event.value)"
+      [(ngModel)]="sort"
+    >
       <mat-option value="name">Name</mat-option>
-      <mat-option value="-released">Released</mat-option>
-      <mat-option value="-year">Year</mat-option>
-      <mat-option value="-imdb">IMDB Rating</mat-option>
+      <mat-option value="year">Year</mat-option>
+      <mat-option value="imdb">IMDB Rating</mat-option>
       <mat-option value="metacritic">Metacritic</mat-option>
     </mat-select>
   </mat-form-field>

@@ -4,4 +4,6 @@ export interface UpcomingMovies {
   imdb_url: string;
   movie: string;
   rating: number;
+  year: number;
+  metacritic: number;
 }

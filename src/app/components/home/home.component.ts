@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpService } from '../services/http.service';
 import { UpcomingMovies } from 'src/app/models/movies.models';
 import { SearchService } from '../services/search.service';
+import { MatSelectChange } from '@angular/material/select';
 
 @Component({
   selector: 'app-home',
@@ -46,5 +47,30 @@ export class HomeComponent implements OnInit {
         this.filterMovies();
       },
     });
+  }
+
+  onSortHandler(value: string) {
+    if (value === 'name') {
+      this.filteredMovies.sort((a: UpcomingMovies, b: UpcomingMovies) =>
+        a.movie.localeCompare(b.movie)
+      );
+    }
+    if (value === 'imdb') {
+      this.filteredMovies.sort(
+        (a: UpcomingMovies, b: UpcomingMovies) => b.rating - a.rating
+      );
+    }
+
+    if (value === 'metacritic') {
+      this.filteredMovies.sort(
+        (a: UpcomingMovies, b: UpcomingMovies) => b.metacritic - a.metacritic
+      );
+    }
+
+    if (value === 'year') {
+      this.filteredMovies.sort(
+        (a: UpcomingMovies, b: UpcomingMovies) => b.year - a.year
+      );
+    }
   }
 }
