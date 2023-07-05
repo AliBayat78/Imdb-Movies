@@ -1,0 +1,99 @@
+.movie {
+  &-container {
+    background-color: #000;
+    position: relative;
+    height: 172px;
+    color: #fff;
+    text-align: center;
+  }
+
+  &-thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 172px;
+  }
+
+  &-metacritic {
+    color: rgb(98, 238, 98);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  &-metacritic img {
+    width: 30px;
+  }
+
+  &-info {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  &-rating {
+    color: #fff;
+  }
+
+  &-year {
+    color: #fff;
+    top: 2%;
+    right: 0;
+  }
+
+  &-description {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 157px;
+  }
+
+  &-name {
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &-url {
+    width: 100%;
+    display: flex;
+    color: rgb(83, 83, 230);
+    white-space: nowrap;
+    line-clamp: 1;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.imdb-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.imdb-rate img {
+  width: 30px;
+  height: 20px;
+  margin-left: 2rem;
+  border-radius: 4px;
+}

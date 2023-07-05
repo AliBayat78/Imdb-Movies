@@ -15,37 +15,6 @@
 
 <div class="movies">
   <div class="movie" *ngFor="let movie of filteredMovies">
-    <div class="movie-container">
-      <div class="movie-metacritic">
-        <img src="assets/icon/metacritic.png" />
-        <span>{{ movie.metacritic }}</span>
-      </div>
-      <img [src]="movie.image" class="movie-thumbnail" alt="thumbnail" />
-    </div>
-    <div class="movie-info">
-      <div class="imdb-rate">
-        <img src="assets/icon/imdb.png" />
-        <span class="movie-rating"> Rate: {{ movie.rating }} </span>
-      </div>
-      <span class="movie-year">Year: {{ movie.year }}</span>
-    </div>
-    <div class="movie-description">
-      <p class="movie-name">
-        {{
-          movie.movie.length > 32
-            ? movie.movie.slice(0, 32) + "..."
-            : movie.movie
-        }}
-      </p>
-
-      <a target="_blank" [href]="movie.imdb_url" class="movie-url">
-        More Info :
-        {{
-          movie.imdb_url.length > 32
-            ? movie.imdb_url.slice(0, 32) + "..."
-            : movie.imdb_url
-        }}</a
-      >
-    </div>
+    <app-movie [movie]="movie"></app-movie>
   </div>
 </div>
