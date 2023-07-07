@@ -17,6 +17,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
 import { HomeComponent } from './components/home/home.component';
 import { MovieComponent } from './components/home/movie/movie.component';
 import { ErrorsInterceptor } from './interceptors/errors.interceptor';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { ErrorsInterceptor } from './interceptors/errors.interceptor';
     SearchBarComponent,
     HomeComponent,
     MovieComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,

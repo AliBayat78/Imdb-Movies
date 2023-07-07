@@ -1,12 +1,24 @@
 <div class="search">
-  <span class="logo" routerLink="/">Movie Data Base</span>
-  <div class="search-container">
-    <input
-      placeholder="Search Movie ..."
-      class="search-input"
-      [(ngModel)]="searchTerm"
-      name="search"
-      (input)="onSearchInputChange()"
-    />
+  <div class="logo-container">
+    <span class="logo" routerLink="/">Movie Data Base</span>
+    <div class="search-container">
+      <input
+        placeholder="Search Movie ..."
+        class="search-input"
+        [(ngModel)]="searchTerm"
+        name="search"
+        (input)="onSearchInputChange()"
+      />
+    </div>
+  </div>
+  <div class="pages-container">
+    <div routerLink="/register" class="register">
+      <img class="registerIcon" src="assets/icon/register.png" />
+      <span>Register</span>
+    </div>
+    <div routerLink="/login" class="login">
+      <img src="assets/icon/login.png" />
+      <span>Login</span>
+    </div>
   </div>
 </div>
