@@ -1,1 +1,62 @@
-<app-search-bar></app-search-bar>
+<div class="register-container">
+  <form
+    (ngSubmit)="onSubmit()"
+    [formGroup]="registrationForm"
+    class="register-form"
+  >
+    <div class="input-container">
+      <input
+        [class.is-invalid]="userName?.invalid && userName?.touched"
+        formControlName="username"
+        placeholder="Username"
+        type="text"
+        name="username"
+      />
+      <div *ngIf="userName?.invalid && userName?.touched">
+        <span *ngIf="userName?.errors?.['required']" class="error"
+          >Username is Required</span
+        >
+        <span *ngIf="userName?.errors?.['minlength']" class="error"
+          >Username Must be 3 or more Characters</span
+        >
+      </div>
+      <input
+        [class.is-invalid]="password?.invalid && password?.touched"
+        formControlName="password"
+        placeholder="Password"
+        type="text"
+        name="password"
+      />
+      <div *ngIf="userName?.invalid && userName?.touched">
+        <span *ngIf="password?.errors?.['required']" class="error"
+          >Password is Required</span
+        >
+      </div>
+      <input
+        [class.is-invalid]="
+          registrationForm?.errors?.['missMatch']
+        "
+        formControlName="confirmPassword"
+        placeholder="Confirm Password"
+        type="text"
+        name="confirmPassword"
+      />
+      <span *ngIf="registrationForm?.errors?.['missMatch']" class="error"
+        >Does not Match with the Password</span
+      >
+      <input
+        formControlName="email"
+        placeholder="Email Address"
+        type="text"
+        name="email"
+      />
+      <input
+        formControlName="phoneNumber"
+        placeholder="Phone Number"
+        type="text"
+        name="phoneNumber"
+      />
+    </div>
+    <button type="submit" class="register-btn">Register</button>
+  </form>
+</div>
