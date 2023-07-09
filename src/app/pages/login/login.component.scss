@@ -32,7 +32,7 @@
   border-radius: 8px;
   width: 100%;
   outline: none;
-  margin: 20px auto;
+  margin: 15px auto;
 }
 
 .login-btn {
@@ -49,4 +49,12 @@
     color: #3f51b5;
     background-color: #fff;
   }
+}
+
+.is-invalid {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
 }

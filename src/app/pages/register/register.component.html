@@ -34,14 +34,14 @@
       </div>
       <input
         [class.is-invalid]="
-          registrationForm?.errors?.['missMatch']
+          registrationForm.errors?.['missMatch']
         "
         formControlName="confirmPassword"
         placeholder="Confirm Password"
         type="text"
         name="confirmPassword"
       />
-      <span *ngIf="registrationForm?.errors?.['missMatch']" class="error"
+      <span *ngIf="registrationForm.errors?.['missMatch']" class="error"
         >Does not Match with the Password</span
       >
       <input

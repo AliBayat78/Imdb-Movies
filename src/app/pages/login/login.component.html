@@ -1,8 +1,30 @@
 <div class="login-container">
-  <form class="login-form" >
+  <form #loginForm="ngForm" class="login-form">
     <div class="input-container">
-      <input placeholder="Username" type="text" name="username" />
-      <input placeholder="Password" type="text" name="password" />
+      <input
+        [(ngModel)]="userName"
+        placeholder="Username"
+        type="text"
+        name="username"
+        #name="ngModel"
+        required
+        [class.is-invalid]="name.invalid && name.touched"
+      />
+      <span class="error" *ngIf="name.invalid && name.touched"
+        >Please Enter Your Username</span
+      >
+      <input
+        [(ngModel)]="password"
+        placeholder="Password"
+        type="text"
+        name="password"
+        #passwordRef="ngModel"
+        required
+        [class.is-invalid]="passwordRef.invalid && passwordRef.touched"
+      />
+      <span class="error" *ngIf="passwordRef.invalid && passwordRef.touched"
+        >Please Enter Your Password</span
+      >
     </div>
     <button type="submit" class="login-btn">Login</button>
   </form>

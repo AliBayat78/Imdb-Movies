@@ -1,8 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {
-  AbstractControl,
   FormBuilder,
-  ValidationErrors,
   Validators,
 } from '@angular/forms';
 import { confirmPasswordValidator } from 'src/app/validators/confirmPassword.validator';
